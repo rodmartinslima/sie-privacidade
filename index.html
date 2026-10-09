@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de Privacidade do SIE</title>
+<style>
+  :root { color-scheme: light dark; --texto: #1d2327; --fraco: #5b6770; --fundo: #ffffff; --linha: #e3e7ea; --marca: #0b5fa5; }
+  @media (prefers-color-scheme: dark) { :root { --texto: #e6eaed; --fraco: #9aa6ae; --fundo: #121517; --linha: #2a3034; --marca: #5fa8e8; } }
+  body { margin: 0; background: var(--fundo); color: var(--texto); font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 40px 20px 64px; }
+  h1 { font-size: 1.8rem; margin: 0 0 4px; }
+  h2 { font-size: 1.15rem; margin: 36px 0 8px; padding-top: 20px; border-top: 1px solid var(--linha); }
+  .data { color: var(--fraco); margin: 0 0 24px; }
+  a { color: var(--marca); }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: .95rem; }
+  th, td { text-align: left; vertical-align: top; padding: 8px 10px; border-bottom: 1px solid var(--linha); }
+  th { color: var(--fraco); font-weight: 600; }
+  .tabela { overflow-x: auto; }
+  .resumo { background: color-mix(in srgb, var(--marca) 10%, transparent); border-radius: 10px; padding: 14px 18px; }
+</style>
+</head>
+<body>
+<main>
+<h1>Política de Privacidade do SIE</h1>
+<p class="data">Última atualização: 8 de outubro de 2026</p>
+
+<p class="resumo"><strong>Em resumo:</strong> o SIE – Inspeção de Estruturas não tem conta de usuário nem servidor próprio.
+As inspeções, fotos, áudios e cadastros ficam guardados apenas no seu celular. Não vendemos, não compartilhamos e não
+coletamos seus dados. Algumas funções opcionais usam serviços do Google, descritos abaixo.</p>
+
+<p>Esta política explica como o aplicativo SIE – Inspeção de Estruturas (pacote <code>com.rodrigomartins.sie</code>),
+desenvolvido por Rodrigo Martins, trata as informações de quem o utiliza, em conformidade com a Lei Geral de Proteção de
+Dados (Lei nº 13.709/2018).</p>
+
+<h2>1. Dados que ficam no seu aparelho</h2>
+<p>Estruturas, danos, serviços, inspeções, notas, observações e os dados do inspetor informados em Configurações (nome,
+número de registro, e-mail, UF e cidade) são gravados em um banco de dados interno do SIE, no próprio celular. Fotos e
+gravações de áudio dos danos ficam na área de arquivos do próprio aplicativo. O desenvolvedor não tem acesso a essas
+informações, e elas não são enviadas para nenhum servidor do SIE, que não existe.</p>
+<p>Os dados permanecem no aparelho até que você os exclua no app, limpe os dados do aplicativo nas configurações do
+Android ou desinstale o app. Não há cópia em nuvem feita pelo SIE, então essas ações não podem ser desfeitas.</p>
+
+<h2>2. Localização</h2>
+<p>O SIE pede permissão de localização somente quando você toca em <em>Localização</em> no cadastro de uma estrutura. A
+posição é lida uma única vez naquele momento e gravada no cadastro da estrutura. O app não acompanha sua localização em
+segundo plano e não registra trajetos.</p>
+<p>Para preencher a cidade e a UF a partir das coordenadas, o SIE usa o serviço de geocodificação do próprio Android, que
+consulta o Google e precisa de internet. Sem conexão, os campos ficam livres para digitar.</p>
+<p>Você pode negar a permissão e digitar as coordenadas manualmente.</p>
+
+<h2>3. Câmera</h2>
+<p>A câmera é usada apenas quando você toca para fotografar um dano. A foto é salva na área de arquivos do aplicativo,
+vinculada à inspeção, e só sai do aparelho quando você compartilha o relatório. O SIE não acessa a galeria nem outras
+fotos do celular.</p>
+
+<h2>4. Microfone</h2>
+<p>O microfone é usado apenas quando você toca para gravar uma observação em áudio de um dano. A gravação começa e termina
+pelo seu toque, é salva como arquivo na área do aplicativo e não é enviada a lugar nenhum. Fora desse momento, o app não
+escuta nada, e não há escuta em segundo plano.</p>
+<p>A permissão de microfone é opcional: sem ela, o restante do app funciona normalmente.</p>
+
+<h2>5. Arquivos de cadastros da empresa</h2>
+<p>Em <em>Configurações → Cadastros da empresa</em> você pode importar um arquivo JSON com estruturas, danos e serviços.
+O SIE lê somente o arquivo que você escolher no seletor de arquivos do Android e grava os cadastros no banco interno do
+aparelho. Nenhum outro arquivo é acessado.</p>
+
+<h2>6. Serviços de terceiros</h2>
+<p>Algumas funções dependem de serviços externos. Eles só recebem a informação necessária para responder, no momento em
+que você usa a função:</p>
+<div class="tabela">
+<table>
+  <thead><tr><th>Serviço</th><th>Quando é usado</th><th>O que recebe</th></tr></thead>
+  <tbody>
+    <tr><td>Google Maps</td><td>Ao abrir o mapa da estrutura</td><td>As coordenadas exibidas no mapa e dados técnicos do aparelho usados pelo serviço</td></tr>
+    <tr><td>Geocodificação do Android (Google)</td><td>Ao obter a localização de uma estrutura</td><td>As coordenadas lidas, para devolver a cidade e a UF</td></tr>
+    <tr><td>Google Play</td><td>Ao assinar, comprar ou restaurar o SIE Pro</td><td>A compra é processada pelo Google; o SIE recebe apenas a confirmação de que o plano está ativo</td></tr>
+  </tbody>
+</table>
+</div>
+<p>Esses serviços seguem a <a href="https://policies.google.com/privacy?hl=pt-BR">política de privacidade do Google</a>.
+O SIE não recebe nem guarda dados de pagamento, como número de cartão.</p>
+
+<h2>7. O que o SIE não faz</h2>
+<ul>
+  <li>Não exige cadastro, login ou senha.</li>
+  <li>Não usa ferramentas de análise, rastreamento ou publicidade.</li>
+  <li>Não vende nem compartilha seus dados com terceiros para qualquer finalidade.</li>
+  <li>Não acessa contatos, galeria de fotos ou arquivos pessoais além do arquivo que você escolher importar.</li>
+  <li>Não usa a localização nem o microfone em segundo plano.</li>
+</ul>
+
+<h2>8. Relatórios e exportação</h2>
+<p>Os relatórios em PDF e as exportações em JSON são gerados no aparelho e entregues ao menu de compartilhamento do
+Android. O destino, como e-mail, Google Drive ou WhatsApp, é escolhido por você, e a partir daí passa a valer a política
+do serviço escolhido. O relatório contém os dados da inspeção e os dados do inspetor informados em Configurações.</p>
+
+<h2>9. Seus direitos</h2>
+<p>Como os dados ficam apenas com você, é você quem os controla: pode consultar, corrigir e excluir qualquer registro
+diretamente no app, exportá-los ou apagar tudo a qualquer momento. Dúvidas sobre esta política ou sobre a LGPD podem ser
+enviadas para o contato abaixo.</p>
+
+<h2>10. Crianças</h2>
+<p>O SIE é uma ferramenta profissional destinada a inspetores e empresas de engenharia, e não é direcionado a menores de
+18 anos.</p>
+
+<h2>11. Alterações</h2>
+<p>Esta política pode ser atualizada quando o app ganhar novas funções. A data no topo indica a versão vigente, e mudanças
+relevantes serão informadas na descrição da atualização na Google Play.</p>
+
+<h2>12. Contato</h2>
+<p>Rodrigo Martins<br>
+E-mail: <a href="mailto:rm.desenvolvimento.apps@gmail.com">rm.desenvolvimento.apps@gmail.com</a></p>
+</main>
+</body>
+</html>
